@@ -165,7 +165,7 @@ function Favorites() {
         </a>
       </footer>
     </div>
-   );
+  );
 }
 
 export default Favorites;
