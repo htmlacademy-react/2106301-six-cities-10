@@ -1,8 +1,12 @@
 import MainPage from '../../pages/mainPage/main';
 
-function App(): JSX.Element {
+type Props = {
+  places: number;
+};
+
+function App({places} : Props): JSX.Element {
   return (
-    <MainPage />
+    <MainPage places = {places}/>
   );
 }
 
