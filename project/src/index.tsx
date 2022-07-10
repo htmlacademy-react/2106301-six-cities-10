@@ -9,6 +9,6 @@ const COUNT_OF_AVAILABLE_PLACES = 100;
 
 root.render(
   <React.StrictMode>
-    <App places={COUNT_OF_AVAILABLE_PLACES}/>
+    <App countOfAvailablePlaces={COUNT_OF_AVAILABLE_PLACES}/>
   </React.StrictMode>,
 );

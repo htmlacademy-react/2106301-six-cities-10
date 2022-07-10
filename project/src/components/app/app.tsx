@@ -1,12 +1,12 @@
 import MainPage from '../../pages/mainPage/main-page';
 
-type countOfAvailablePlaces = {
-  places: number;
+type Props = {
+  countOfAvailablePlaces: number;
 };
 
-function App({places}: countOfAvailablePlaces): JSX.Element {
+function App({countOfAvailablePlaces}:Props): JSX.Element {
   return (
-    <MainPage places = {places}/>
+    <MainPage countOfAvailablePlaces = {countOfAvailablePlaces}/>
   );
 }
 
