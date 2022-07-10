@@ -1,9 +1,9 @@
 import Card from '../../components/card/card';
-type Props = {
+type countOfAvailablePlaces = {
   places: number;
 };
 
-function MainPage({places} : Props) {
+function MainPage({places}: countOfAvailablePlaces) {
   return (
     <div className="page page--gray page--main">
       <header className="header">

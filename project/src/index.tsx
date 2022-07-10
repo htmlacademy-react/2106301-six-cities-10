@@ -5,10 +5,10 @@ import App from './components/app/app';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
-const places = 100;
+const COUNT_OF_AVAILABLE_PLACES = 100;
 
 root.render(
   <React.StrictMode>
-    <App places ={places}/>
+    <App places={COUNT_OF_AVAILABLE_PLACES}/>
   </React.StrictMode>,
 );
