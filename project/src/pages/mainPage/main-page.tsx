@@ -1,6 +1,9 @@
 import Card from '../../components/card/card';
+import { OffersReview } from '../../types/offers'
+
 type Props = {
   countOfAvailablePlaces: number;
+  offers: OffersReview[];
 };
 
 function MainPage({countOfAvailablePlaces}: Props) {
