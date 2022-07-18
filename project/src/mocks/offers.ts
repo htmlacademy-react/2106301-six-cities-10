@@ -1,6 +1,6 @@
-import { ObjectReview } from "../types/object"
+import { OffersReview } from "../types/offers"
 
-export const objects: ObjectReview[] = [
+export const offers: OffersReview[] = [
   {
     id: 1,
     name: 'Beautiful & luxurious apartment at great location',

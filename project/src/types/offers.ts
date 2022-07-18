@@ -1,4 +1,4 @@
-export type ObjectReview = {
+export type OffersReview = {
   id: number,
   name: string,
   type: string,
