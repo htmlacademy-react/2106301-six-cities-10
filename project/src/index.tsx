@@ -24,7 +24,7 @@ root.render(
           path='/favorites'
           element={
             <PrivateRoute
-              autorizationStatus={AutorizationStatus.NoAuth}
+              autorizationStatus={AutorizationStatus.Auth}
             >
               <FavoritesPage/>
             </PrivateRoute>
