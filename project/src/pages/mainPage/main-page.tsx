@@ -1,5 +1,6 @@
 import Card from '../../components/card/card';
 import Header from '../../components/header/header';
+import SentensCards from '../../components/sentensCard/sentens-card';
 import { OffersReview } from '../../types/offers'
 
 type Props = {
@@ -7,7 +8,7 @@ type Props = {
   offers: OffersReview[];
 };
 
-function MainPage({countOfAvailablePlaces}: Props) {
+function MainPage({countOfAvailablePlaces, offers}: Props) {
   return (
     <div className="page page--gray page--main">
       <Header/>
@@ -105,12 +106,12 @@ function MainPage({countOfAvailablePlaces}: Props) {
                     <p className="place-card__type">Apartment</p>
                   </div>
                 </article>
+                {/* <Card/>
                 <Card/>
                 <Card/>
                 <Card/>
-                <Card/>
-                <Card/>
-
+                <Card/> */}
+                <SentensCards offers={offers}/>
               </div>
             </section>
             <div className="cities__right-section">

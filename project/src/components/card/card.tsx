@@ -1,4 +1,10 @@
-function Card() {
+import { OffersReview } from "../../types/offers";
+
+type cardProps = {
+  offer: OffersReview
+}
+
+function Card({offer}: cardProps) {
   return (
     <article className="cities__card place-card">
       <div className="cities__image-wrapper place-card__image-wrapper">
@@ -9,7 +15,7 @@ function Card() {
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
           <div className="place-card__price">
-            <b className="place-card__price-value">&euro;80</b>
+            <b className="place-card__price-value">&euro;{offer.price}</b>
             <span className="place-card__price-text">&#47;&nbsp;night</span>
           </div>
           <button className="place-card__bookmark-button place-card__bookmark-button--active button" type="button">
@@ -26,7 +32,7 @@ function Card() {
           </div>
         </div>
         <h2 className="place-card__name">
-          <a href="#">Wood and stone place</a>
+          <a href="#">{offer.name}</a>
         </h2>
         <p className="place-card__type">Private room</p>
       </div>
