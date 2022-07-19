@@ -8,6 +8,7 @@ import LoginPage from './pages/loginPage/login-page';
 import PrivateRoute from './components/privateRoute/private-route';
 import { AutorizationStatus } from './consts';
 import { offers } from './mocks/offers';
+import PropertyPage from './pages/prppertyPage/property-page';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -30,7 +31,7 @@ root.render(
           }
         />
         <Route path='/login' element={<LoginPage/>}/>
-        <Route path='/offer/:id' />
+        <Route path='/offer/:id' element={<PropertyPage/>} />
         <Route path='*' element={<Page404/>}/>
       </Routes>
     </BrowserRouter>
