@@ -7,16 +7,16 @@ type sentensProps = {
 }
 
 function SentensCards({offers}:sentensProps): JSX.Element {
-  const [activeCardId, setActiveCardId] = useState<number>()
+  const [activeCardId, setActiveCardId] = useState<number>();
 
   const handleMouseEnter = (id: number) => {
-    setActiveCardId(id)
-  }
+    setActiveCardId(id);
+  };
 
   return(
     <>
       {
-        offers.map((offer) => <Card onMouseEnter={handleMouseEnter} key={offer.id} offer={offer}/> )
+        offers.map((offer) => <Card needToRemoove={activeCardId} onMouseEnter={handleMouseEnter} key={offer.id} offer={offer}/> )
       }
     </>
   );

@@ -4,18 +4,19 @@ import { OffersReview } from '../../types/offers';
 type cardProps = {
   offer: OffersReview
   onMouseEnter: (id: number) => void;
+  needToRemoove: number | undefined;
 }
 
-function Card({offer, onMouseEnter}: cardProps) {
+function Card({offer, onMouseEnter, needToRemoove}: cardProps) {
   const handleMouseEnter = () => {
-    onMouseEnter(offer.id)
-  }
+    onMouseEnter(offer.id);
+  };
 
   return (
     <article onMouseEnter={handleMouseEnter} className="cities__card place-card">
       <div className="cities__image-wrapper place-card__image-wrapper">
         <Link to={`/offer/${offer.id}`}>
-          <img className="place-card__image" src="img/room.jpg" width="260" height="200" alt="Place image" />
+          <img className="place-card__image" src="img/room.jpg" width="260" height="200" alt="PlaceImage" />
         </Link>
       </div>
       <div className="place-card__info">

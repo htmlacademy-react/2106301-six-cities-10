@@ -1,5 +1,5 @@
 import Amsterdam from '../../components/favoritesCitys/amsterdam/amsterdam';
-import Berlin from '../../components/favoritesCitys/moscow/berlin';
+import Berlin from '../../components/favoritesCitys/berlin/berlin';
 import Footer from '../../components/footer/footer';
 import Header from '../../components/header/header';
 import { OffersReview } from '../../types/offers';
