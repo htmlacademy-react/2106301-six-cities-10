@@ -1,5 +1,5 @@
-import Header from "../../components/header/header";
-import PropertyForm from "../../components/propertyForm/property-form";
+import Header from '../../components/header/header';
+import PropertyForm from '../../components/propertyForm/property-form';
 
 function PropertyPage (): JSX.Element {
   return(
@@ -264,7 +264,7 @@ function PropertyPage (): JSX.Element {
         </div>
       </main>
     </div>
-  )
+  );
 }
 
 export default PropertyPage;

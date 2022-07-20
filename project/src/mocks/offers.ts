@@ -1,4 +1,4 @@
-import { OffersReview } from "../types/offers"
+import { OffersReview } from '../types/offers';
 
 export const offers: OffersReview[] = [
   {
@@ -8,6 +8,7 @@ export const offers: OffersReview[] = [
     mainPhoto: 'img',
     rating: 4,
     price: 120,
+    city: 'Amsterdam'
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const offers: OffersReview[] = [
     mainPhoto: 'img',
     rating: 4,
     price: 80,
+    city: 'Amsterdam'
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ export const offers: OffersReview[] = [
     mainPhoto: 'img',
     rating: 4,
     price: 80,
+    city: 'Amsterdam'
   },
   {
     id: 4,
@@ -32,5 +35,6 @@ export const offers: OffersReview[] = [
     mainPhoto: 'img',
     rating: 4,
     price: 80,
+    city: 'Berlin'
   },
-]
+];

@@ -1,4 +1,4 @@
-import { OffersReview } from "../../types/offers";
+import { OffersReview } from '../../types/offers';
 
 type cardProps = {
   offer: OffersReview

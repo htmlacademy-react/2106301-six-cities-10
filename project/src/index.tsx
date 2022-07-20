@@ -26,7 +26,7 @@ root.render(
             <PrivateRoute
               autorizationStatus={AutorizationStatus.Auth}
             >
-              <FavoritesPage/>
+              <FavoritesPage offers={offers}/>
             </PrivateRoute>
           }
         />

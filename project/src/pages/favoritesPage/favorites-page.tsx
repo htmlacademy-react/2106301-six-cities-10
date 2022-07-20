@@ -1,9 +1,14 @@
-import Amsterdam from "../../components/favoritesCitys/amsterdam/amsterdam";
-import Berlin from "../../components/favoritesCitys/moscow/berlin";
-import Footer from "../../components/footer/footer";
-import Header from "../../components/header/header";
+import Amsterdam from '../../components/favoritesCitys/amsterdam/amsterdam';
+import Berlin from '../../components/favoritesCitys/moscow/berlin';
+import Footer from '../../components/footer/footer';
+import Header from '../../components/header/header';
+import { OffersReview } from '../../types/offers';
 
-function FavoritesPage() {
+type favoritesPageProps = {
+  offers: OffersReview[];
+}
+
+function FavoritesPage({offers}: favoritesPageProps) {
   return (
     <div className="page">
       <Header/>
@@ -13,8 +18,8 @@ function FavoritesPage() {
           <section className="favorites">
             <h1 className="favorites__title">Saved listing</h1>
             <ul className="favorites__list">
-              <Amsterdam/>
-              <Berlin/>
+              <Amsterdam offers={offers}/>
+              <Berlin offers={offers}/>
             </ul>
           </section>
         </div>

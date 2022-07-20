@@ -46,7 +46,7 @@ function PropertyForm() {
         <button className="reviews__submit form__submit button" type="submit" disabled>Submit</button>
       </div>
     </form>
-   );
+  );
 }
 
 export default PropertyForm;

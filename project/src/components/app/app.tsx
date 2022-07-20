@@ -1,5 +1,5 @@
 import MainPage from '../../pages/mainPage/main-page';
-import { OffersReview } from '../../types/offers'
+import { OffersReview } from '../../types/offers';
 
 type Props = {
   countOfAvailablePlaces: number;

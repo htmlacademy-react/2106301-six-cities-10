@@ -1,7 +1,6 @@
-import Card from '../../components/cards/card';
 import Header from '../../components/header/header';
 import SentensCards from '../../components/sentensCard/sentens-card';
-import { OffersReview } from '../../types/offers'
+import { OffersReview } from '../../types/offers';
 
 type Props = {
   countOfAvailablePlaces: number;
