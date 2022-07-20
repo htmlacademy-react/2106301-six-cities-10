@@ -1,5 +1,5 @@
 import { OffersReview } from "../../types/offers";
-import Card from "../card/card";
+import Card from "../cards/card";
 
 type sentensProps = {
   offers: OffersReview[];
