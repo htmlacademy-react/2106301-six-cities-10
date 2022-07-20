@@ -9,7 +9,7 @@ function SentensCards({offers}:sentensProps): JSX.Element {
   return(
     <>
       {
-        offers.map((offer) => { return <Card key={offer.id} offer={offer}/>; })
+        offers.map((offer) => <Card key={offer.id} offer={offer}/> )
       }
     </>
   );
