@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { OffersReview } from '../../types/offers';
 import Card from '../cards/card';
 
@@ -5,11 +6,21 @@ type sentensProps = {
   offers: OffersReview[];
 }
 
+
+
 function SentensCards({offers}:sentensProps): JSX.Element {
+  const [activeCardId, setActiveCardId] = useState<number>()
+
+  const handleMouseEnter = (id: number) => {
+    setActiveCardId(id)
+  }
+
+  console.log(activeCardId)
+
   return(
     <>
       {
-        offers.map((offer) => <Card key={offer.id} offer={offer}/> )
+        offers.map((offer) => <Card onMouseEnter={handleMouseEnter} key={offer.id} offer={offer}/> )
       }
     </>
   );
