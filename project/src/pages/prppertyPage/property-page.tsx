@@ -1,7 +1,11 @@
+import { useParams } from 'react-router-dom';
 import Header from '../../components/header/header';
 import PropertyForm from '../../components/propertyForm/property-form';
 
+
 function PropertyPage (): JSX.Element {
+  const {id} = useParams()
+
   return(
     <div className="page">
       <Header/>

@@ -6,16 +6,12 @@ type sentensProps = {
   offers: OffersReview[];
 }
 
-
-
 function SentensCards({offers}:sentensProps): JSX.Element {
   const [activeCardId, setActiveCardId] = useState<number>()
 
   const handleMouseEnter = (id: number) => {
     setActiveCardId(id)
   }
-
-  console.log(activeCardId)
 
   return(
     <>
